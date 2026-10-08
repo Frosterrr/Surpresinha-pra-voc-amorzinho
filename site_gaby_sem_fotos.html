@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uma surpresa para Gaby ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:radial-gradient(circle at top,#4b185f,#170d24 65%,#08050d);color:#fff;overflow-x:hidden}
+section{min-height:100vh;padding:40px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.card{width:min(720px,100%);background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:28px;padding:28px;box-shadow:0 15px 50px #0008;backdrop-filter:blur(8px)}
+h1{font-size:clamp(30px,8vw,55px);margin:10px 0;color:#ff9ddd}
+h2{color:#e8a8ff}
+p{font-size:18px;line-height:1.65}
+button{border:0;border-radius:30px;padding:15px 25px;margin:10px;background:linear-gradient(90deg,#ff55a8,#a85cff);color:#fff;font-weight:bold;font-size:16px;cursor:pointer}
+input{width:100%;padding:15px;border-radius:18px;border:0;margin:12px 0;background:#fff;color:#222;font-size:17px}
+.heart{font-size:38px;animation:float 2s infinite alternate}
+@keyframes float{to{transform:translateY(-10px)}}
+.hidden{display:none!important}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+.photo{height:150px;border-radius:20px;background:linear-gradient(135deg,#542061,#b75d9e);display:flex;align-items:center;justify-content:center;font-weight:bold;color:#fff8}
+.paw{font-size:30px;margin:8px}
+.error{color:#ff9dbe;min-height:25px}
+.small{opacity:.8;font-size:14px}
+</style>
+</head>
+<body>
+
+<section id="gate">
+  <div class="card">
+    <div class="heart">❤️ 🐾 ❤️</div>
+    <h1>Uma surpresa só para você...</h1>
+    <p>Digite a chave para entrar</p>
+    <p class="small">Dica: É algo que eu amo muito.</p>
+    <input id="password" placeholder="Digite a senha">
+    <button onclick="unlock()">DESBLOQUEAR ❤️</button>
+    <div id="error" class="error"></div>
+  </div>
+</section>
+
+<main id="site" class="hidden">
+
+<section>
+<div class="card">
+<div class="heart">🐾 ❤️ 🐾</div>
+<h1>Agora que você entrou...</h1>
+<p>Vem comigo, Gaby. Eu preparei tudo isso pra você. ❤️</p>
+<button onclick="next('espanhol')">COMEÇAR 🐾</button>
+</div>
+</section>
+
+<section id="espanhol">
+<div class="card">
+<h2>🇪🇸 Una pequeña tortura para ti</h2>
+<p>Gabrielly es simplemente un nombre completo; representa todo lo que necesito: una mujer perfecta, maravillosa, sexy y hermosa, entre muchos otros halagos.</p>
+<p>Si la belleza fuera arte, tú serías la obra maestra más perfecta que el mundo haya visto jamás.</p>
+<button onclick="next('cantadas')">CONTINUAR ❤️</button>
+</div>
+</section>
+
+<section id="cantadas">
+<div class="card">
+<h2>Minhas cantadas 😭❤️</h2>
+<p>“Como pode né, eu n ter conhecido uma mulher tão gata como vc só nesse ano, slk vc demorou pra chegar na minha vida.”</p>
+<p>“Gabrielly es simplemente un nombre completo; representa todo lo que necesito: una mujer perfecta, maravillosa, sexy y hermosa, entre muchos otros halagos.”</p>
+<p>“Seu amor me ensinou que a vida é uma escola: em História imagino nosso futuro, em Geografia seu abraço é meu mapa, em Física e Química nossa atração é perfeita, e em Matemática a nossa conta sempre dá um amor infinito.”</p>
+<p>“Si la belleza fuera arte, tú serías la obra maestra más perfecta que el mundo haya visto jamás.”</p>
+<button onclick="next('galeria')">PRÓXIMO 🐾</button>
+</div>
+</section>
+
+<section id="galeria">
+<div class="card">
+<h2>Nosso cantinho de fotos 📸❤️</h2>
+<p class="small">As fotos podem ser colocadas depois pelo GitHub.</p>
+<div class="gallery">
+<div class="photo">Sua foto ❤️</div><div class="photo">Sua foto 🐾</div>
+<div class="photo">Sua foto ❤️</div><div class="photo">Sua foto 🐾</div>
+<div class="photo">Sua foto ❤️</div><div class="photo">Sua foto 🐾</div>
+</div>
+<button onclick="next('textao')">CONTINUAR ❤️</button>
+</div>
+</section>
+
+<section id="textao">
+<div class="card">
+<h2>Uma coisa que eu queria te dizer... ❤️</h2>
+<p>Bommmm aii vamos nós denoooo:<br>
+Como posso começar, fiz dessa vez o site pq tava com o plano completo. Se vc recebeu o site é pq recebeu as cartas e espero q goste, sou um pobre fudido mais tento dar meu máximo para vc percebe q sou merecedor de uma deusa como você.<br><br>
+É sei q eu sou muito dramático, chorão e me magoou muito fácil, mais é q eu realmente me chateoo com coisas simples, e n quero perde vc pq eu ti amu mto e tenho medo de te perder e muitoooo, ainda mais ano q vem né q vou pra outra escola e n ter mais a minha namorada todos os dias.<br><br>
+Agr a parte q vc provável que vá gosta né, ent Gaby sei q sou um mrd nessas coisas, mais quero que vc saiba q eu ti amu mto independente do q vc faça eu sempre te amarei pq vc é a mulher dos meus sonhos, vc tem tudo que eu preciso tudooooo. E só tenho até hj a agradecer por vc aparece na minha vida, foi bem aleatório mais o importante é q hj namoro uma menina incrível doida da cabeça mais incrível. E bom é isso que tenho pra dizer q eu ti amu muito independente de tudo que aconteça e q isso n vai acabar se depende de mim pq afinal de contas tú és mi mulher e sempre será.<br><br>
+Ent pra finalizar tiii amuuuuuuu muitooooo mozinhuuuu</p>
+<button onclick="next('secreta')">TEM UMA MENSAGEM SECRETA 🐾</button>
+</div>
+</section>
+
+<section id="secreta">
+<div class="card">
+<h2>🔐 Mensagem secreta</h2>
+<p>Digite a senha secreta:</p>
+<input id="secret" placeholder="Dica: o que eu sempre falo ❤️">
+<button onclick="secret()">DESBLOQUEAR</button>
+<p id="secretMsg"></p>
+<button class="hidden" id="promiseBtn" onclick="next('promessa')">IR PARA A PROMESSA ❤️</button>
+</div>
+</section>
+
+<section id="promessa">
+<div class="card">
+<h2>Uma promessa pra você... 🌙</h2>
+<p>Gabrielly você aceita ser minha namorada não só por hj mais para sempre, e futuramente você se tornar a minha esposa e mãe dos meus filhos, e n pode falta isso é uma promessa eae você promete para o seu neném???</p>
+<button onclick="next('final')">EU PROMETO ❤️</button>
+</div>
+</section>
+
+<section id="final">
+<div class="card">
+<div class="heart">❤️ 🐾 ❤️</div>
+<h1>Última surpresa...</h1>
+<p>Bom esse é o final ent tii amuuu espero que vc tenha gostado do presente q fiz pra vc.<br><br>
+Mais dps de vc ver já me fala né, minha gsts vc gostou do presente?</p>
+<button onclick="celebrate()">EU GOSTEI ❤️</button>
+<p id="celebration"></p>
+</div>
+</section>
+
+</main>
+
+<script>
+function norm(s){
+return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]/g,"");
+}
+function unlock(){
+const v=norm(document.getElementById("password").value);
+const valid=["meurabao","meuspeitos","voce","tiamu","gaby","minhabb","minhanenem"].includes(v);
+if(valid){
+document.getElementById("gate").classList.add("hidden");
+document.getElementById("site").classList.remove("hidden");
+window.scrollTo(0,0);
+}else{
+document.getElementById("error").textContent="Mds amor 😭 é ALGO QUE EU AMO MUITO!!";
+}
+}
+function secret(){
+const v=norm(document.getElementById("secret").value);
+if(v==="tiamu"){
+document.getElementById("secretMsg").innerHTML="Acerto a senha meu amor tá espertinha hein, isso aqui é só pra vc saber q eu NUNCA NUNCA na minha vida vou te troca, e n pode falta né vindo do seu safadinho, tu tem mó rabao ent pq eu iria te trocar né sem conta do seu peito ent sua doida n se preocupa de traição vindo de mim pq só vc tem o rabao q eu sou apaixonado e os peitos q eu amo aperta";
+document.getElementById("promiseBtn").classList.remove("hidden");
+}else{
+document.getElementById("secretMsg").textContent="Errou 😭 tenta de novo.";
+}
+}
+function next(id){document.getElementById(id).scrollIntoView({behavior:"smooth"});}
+function celebrate(){document.getElementById("celebration").textContent="AAAAA EU SABIA KKKKK ❤️🐾"; }
+</script>
+</body>
+</html>
